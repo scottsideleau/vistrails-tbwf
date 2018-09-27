@@ -22,15 +22,15 @@ You may choose to build any/all of the provided Docker containers by:
 
   1. Switching into any of the container source directories.
 
-    ```bash
-    cd nigeria
-    ```
+```bash
+cd nigeria
+```
 
   2. Issuing the Docker build command for the chosen container.
 
-    ```bash
-    docker build -t tb-wf:nigeria .
-    ```
+```bash
+docker build -t tb-wf:nigeria .
+```
 
 A. View the generated workflow in VisTrails
 
@@ -39,9 +39,9 @@ A. View the generated workflow in VisTrails
 
   1. Install [VisTrails](https://vistrails.org) on your local computer.
 
-    ```bash
-    brew cask install vistrails
-    ```
+```bash
+brew cask install vistrails
+```
 
   2. Run VisTrails by selecting it from your Applications/ directory.
 
@@ -56,17 +56,17 @@ B. Run the Nigeria workflow within a Docker container
 
   1. Install [Docker](https://www.docker.com) on your local computer.
 
-    ```bash
-    brew cask install docker
-    ```
+```bash
+brew cask install docker
+```
 
   2. Run Docker by selecting it from your Applications/ directory.
 
   3. Run the tb-wf:nigeria container and view results in STDOUT.
 
-  ```bash
-  docker run scottsideleau/tb-wf:nigeria
-  ```
+```bash
+docker run scottsideleau/tb-wf:nigeria
+```
 
 C. Run the TB workflow with user-supplied country parameter in a Docker container
 
@@ -74,9 +74,9 @@ C. Run the TB workflow with user-supplied country parameter in a Docker containe
 
   2. Run the tb-wf:parameterized container and specify a country of interest.
 
-  ```bash
-  docker run scottsideleau/tb-wf:parameterized country=Albania
-  ```
+```bash
+docker run scottsideleau/tb-wf:parameterized country=Albania
+```
 
   NOTE: The above example specifies Albania vice Nigeria, the latter of which 
   was chosen for the user in Part A above.  Experiment freely with other 
